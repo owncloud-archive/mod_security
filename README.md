@@ -9,6 +9,7 @@ This rules are following a positive security model, this means that only request
 | /rules/ | Contains stable rules.
 | /experimental/ | Contains experimental rules which should only be used carefully in production.
 | /hotfix/ | Contains hotfixes for security issues. - Please use them only if you have to, updating the instance is often a better idea.
+| /kiddy_blocker/ | Rules to block attackers that are trying to exploit known vulnerablities.
 
 ## Supported versions
 - ownCloud 5.0
