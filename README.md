@@ -19,6 +19,12 @@ This rules are following a positive security model, this means that only request
 ### What webservers are tested?
 We've tested the rules under Apache 2.2 and mod_security 2.6
 
+### Installation
+```
+Include "/mod_security/kiddy_blocker/*.conf"
+Include "/mod_security/rules/*.conf"
+```
+
 ### Does this really prevent security issues?
 Yup! - About 90% of the past security issues in ownCloud would have been prevented using this rules.
 
