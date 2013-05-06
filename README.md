@@ -20,7 +20,17 @@ This rules are following a positive security model, this means that only request
 We've tested the rules under Apache 2.2 and mod_security 2.6
 
 ### Installation
+
+Without reverse proxy:
 ```
+Include "/mod_security/config/normal.conf"
+Include "/mod_security/kiddy_blocker/*.conf"
+Include "/mod_security/rules/*.conf"
+```
+
+With reverse proxy (``X-Forwarded-For``):
+```
+Include "/mod_security/config/reverse.conf"
 Include "/mod_security/kiddy_blocker/*.conf"
 Include "/mod_security/rules/*.conf"
 ```
